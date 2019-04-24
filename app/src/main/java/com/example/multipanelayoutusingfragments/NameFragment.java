@@ -65,7 +65,7 @@ public class NameFragment extends Fragment {
                              Bundle savedInstanceState) {
 
         String[] namesofstudents ={"Kartik","Shubham","Sushank","Jasjot","Monika","Anchalana"};
-        AdapterNameFragment adapterNameFragment = new AdapterNameFragment(NameFragment.this,namesofstudents);
+        AdapterNameFragment adapterNameFragment = new AdapterNameFragment(getActivity(), namesofstudents);
         ListView namelist = getView().findViewById(R.id.namefragment);
         namelist.setAdapter(adapterNameFragment);
 
